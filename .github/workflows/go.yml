@@ -67,10 +67,10 @@ jobs:
     name: Benchmark
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-go@v1
+      - uses: actions/checkout@v3
+      - uses: actions/setup-go@v3
       - name: Run benchmark
-        working-directory: ./go/benchmarks
+        working-directory: ./go
         run: make bench | tee output.txt
 
       - name: Store benchmark result
