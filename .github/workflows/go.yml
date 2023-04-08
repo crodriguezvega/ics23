@@ -65,12 +65,12 @@ jobs:
 
   benchmark:
     name: Benchmark
-    working-directory: ./go/benchmarks
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-go@v1
       - name: Run benchmark
+        working-directory: ./go/benchmarks
         run: make bench | tee output.txt
 
       - name: Store benchmark result
