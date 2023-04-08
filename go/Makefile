@@ -1,7 +1,14 @@
 test:
 	go test .
 
-.PHONY: test 
+.PHONY: test
+
+bench:
+	cd benchmarks && \
+		go test -run=^# -bench=.
+
+.PHONY: bench
+
 ##### Linting #####
 
 golangci_lint_cmd=golangci-lint
@@ -26,4 +33,3 @@ format:
 	$(golangci_lint_cmd) run --fix
 
 .PHONY: format
-
