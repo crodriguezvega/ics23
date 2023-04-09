@@ -5,7 +5,7 @@ test:
 
 bench:
 	cd benchmarks && \
-		go test -run=^$ -bench=.
+		go test -run='^$' -bench=.
 
 .PHONY: bench
 
