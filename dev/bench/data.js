@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1681026268748,
+  "lastUpdate": 1681067194859,
   "repoUrl": "https://github.com/crodriguezvega/ics23",
   "entries": {
     "Go Benchmark": [
@@ -84,6 +84,86 @@ window.BENCHMARK_DATA = {
             "value": 36939,
             "unit": "ns/op\t   16208 B/op\t     313 allocs/op",
             "extra": "31052 times\n2 procs"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "crodriguezvega",
+            "username": "crodriguezvega"
+          },
+          "committer": {
+            "name": "crodriguezvega",
+            "username": "crodriguezvega"
+          },
+          "id": "e968a1e6ee92633b63f610c8bacc151b5a13752e",
+          "message": "simulate performance degradation",
+          "timestamp": "2023-04-08T19:04:22Z",
+          "url": "https://github.com/crodriguezvega/ics23/pull/1/commits/e968a1e6ee92633b63f610c8bacc151b5a13752e"
+        },
+        "date": 1681067193457,
+        "tool": "go",
+        "benches": [
+          {
+            "name": "BenchmarkVerification/memdb-10000-16-40/verify-membership",
+            "value": 13347192,
+            "unit": "ns/op\t    6520 B/op\t     131 allocs/op",
+            "extra": "85 times\n2 procs"
+          },
+          {
+            "name": "BenchmarkVerification/memdb-10000-16-40/verify-non-membership",
+            "value": 35850,
+            "unit": "ns/op\t   11424 B/op\t     228 allocs/op",
+            "extra": "32806 times\n2 procs"
+          },
+          {
+            "name": "BenchmarkVerification/memdb-100000-16-40/verify-membership",
+            "value": 13161024,
+            "unit": "ns/op\t    7371 B/op\t     147 allocs/op",
+            "extra": "82 times\n2 procs"
+          },
+          {
+            "name": "BenchmarkVerification/memdb-100000-16-40/verify-non-membership",
+            "value": 51280,
+            "unit": "ns/op\t   14352 B/op\t     285 allocs/op",
+            "extra": "23188 times\n2 procs"
+          },
+          {
+            "name": "BenchmarkVerification/memdb-1000000-16-40/verify-membership",
+            "value": 13888589,
+            "unit": "ns/op\t    8089 B/op\t     161 allocs/op",
+            "extra": "86 times\n2 procs"
+          },
+          {
+            "name": "BenchmarkVerification/memdb-1000000-16-40/verify-non-membership",
+            "value": 54333,
+            "unit": "ns/op\t   17712 B/op\t     351 allocs/op",
+            "extra": "21423 times\n2 procs"
+          },
+          {
+            "name": "BenchmarkVerification/memdb-1000000-32-80/verify-membership",
+            "value": 13921491,
+            "unit": "ns/op\t    8224 B/op\t     162 allocs/op",
+            "extra": "81 times\n2 procs"
+          },
+          {
+            "name": "BenchmarkVerification/memdb-1000000-32-80/verify-non-membership",
+            "value": 57322,
+            "unit": "ns/op\t   17944 B/op\t     352 allocs/op",
+            "extra": "22506 times\n2 procs"
+          },
+          {
+            "name": "BenchmarkVerification/memdb-1000000-64-160/verify-membership",
+            "value": 14023431,
+            "unit": "ns/op\t    9059 B/op\t     176 allocs/op",
+            "extra": "85 times\n2 procs"
+          },
+          {
+            "name": "BenchmarkVerification/memdb-1000000-64-160/verify-non-membership",
+            "value": 59108,
+            "unit": "ns/op\t   18176 B/op\t     351 allocs/op",
+            "extra": "20821 times\n2 procs"
           }
         ]
       }
