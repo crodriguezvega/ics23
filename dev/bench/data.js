@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1681067194859,
+  "lastUpdate": 1681414566032,
   "repoUrl": "https://github.com/crodriguezvega/ics23",
   "entries": {
     "Go Benchmark": [
@@ -164,6 +164,90 @@ window.BENCHMARK_DATA = {
             "value": 59108,
             "unit": "ns/op\t   18176 B/op\t     351 allocs/op",
             "extra": "20821 times\n2 procs"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "carlos@interchain.io",
+            "name": "Carlos Rodriguez",
+            "username": "crodriguezvega"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "8ff01b74e88c64e9ca8e46f82b3597722258508a",
+          "message": "Merge branch 'cosmos:master' into master",
+          "timestamp": "2023-04-13T21:33:04+02:00",
+          "tree_id": "7867c6ed0416660efff70c06f49df172b10e0946",
+          "url": "https://github.com/crodriguezvega/ics23/commit/8ff01b74e88c64e9ca8e46f82b3597722258508a"
+        },
+        "date": 1681414564620,
+        "tool": "go",
+        "benches": [
+          {
+            "name": "BenchmarkVerification/memdb-10000-16-40/verify-membership",
+            "value": 21118,
+            "unit": "ns/op\t    6792 B/op\t     135 allocs/op",
+            "extra": "55422 times\n2 procs"
+          },
+          {
+            "name": "BenchmarkVerification/memdb-10000-16-40/verify-non-membership",
+            "value": 41187,
+            "unit": "ns/op\t   12624 B/op\t     251 allocs/op",
+            "extra": "33486 times\n2 procs"
+          },
+          {
+            "name": "BenchmarkVerification/memdb-100000-16-40/verify-membership",
+            "value": 23903,
+            "unit": "ns/op\t    7104 B/op\t     141 allocs/op",
+            "extra": "50100 times\n2 procs"
+          },
+          {
+            "name": "BenchmarkVerification/memdb-100000-16-40/verify-non-membership",
+            "value": 48045,
+            "unit": "ns/op\t   14208 B/op\t     282 allocs/op",
+            "extra": "22158 times\n2 procs"
+          },
+          {
+            "name": "BenchmarkVerification/memdb-1000000-16-40/verify-membership",
+            "value": 26416,
+            "unit": "ns/op\t    8184 B/op\t     162 allocs/op",
+            "extra": "50382 times\n2 procs"
+          },
+          {
+            "name": "BenchmarkVerification/memdb-1000000-16-40/verify-non-membership",
+            "value": 55003,
+            "unit": "ns/op\t   17544 B/op\t     347 allocs/op",
+            "extra": "24020 times\n2 procs"
+          },
+          {
+            "name": "BenchmarkVerification/memdb-1000000-32-80/verify-membership",
+            "value": 24450,
+            "unit": "ns/op\t    7952 B/op\t     156 allocs/op",
+            "extra": "46656 times\n2 procs"
+          },
+          {
+            "name": "BenchmarkVerification/memdb-1000000-32-80/verify-non-membership",
+            "value": 51935,
+            "unit": "ns/op\t   16120 B/op\t     316 allocs/op",
+            "extra": "23384 times\n2 procs"
+          },
+          {
+            "name": "BenchmarkVerification/memdb-1000000-64-160/verify-membership",
+            "value": 25498,
+            "unit": "ns/op\t    8488 B/op\t     164 allocs/op",
+            "extra": "42902 times\n2 procs"
+          },
+          {
+            "name": "BenchmarkVerification/memdb-1000000-64-160/verify-non-membership",
+            "value": 50150,
+            "unit": "ns/op\t   16112 B/op\t     311 allocs/op",
+            "extra": "21909 times\n2 procs"
           }
         ]
       }
