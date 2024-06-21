@@ -34,6 +34,17 @@ type CommitmentRoot []byte
 // proof is (contains) an ExistenceProof for the given key and value AND
 // calculating the root for the ExistenceProof matches the provided CommitmentRoot
 func VerifyMembership(spec *ProofSpec, root CommitmentRoot, proof *CommitmentProof, key []byte, value []byte) bool {
+
+	// Simulate performance degration
+	var factors []int
+	num := 1234567
+	for i := 1; i <= num; i++ {
+		if num%i == 0 {
+			factors = append(factors, i)
+		}
+	}
+	//
+
 	// decompress it before running code (no-op if not compressed)
 	proof = Decompress(proof)
 	ep := getExistProofForKey(proof, key)
